@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  position: relative;
+}
+
+.active {
+  color: white;
+  background-color: #1ABC9C;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.layer {
+  background-color: #1ABC9C;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.col-span-1:hover .layer{
+  opacity: 0.8;
+}
